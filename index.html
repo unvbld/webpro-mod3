@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML5 -->
+<html lang="en"> <!-- Elemen root dari dokumen HTML, dengan bahasa Inggris sebagai default -->
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter yang digunakan, yaitu UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Menyesuaikan tampilan agar responsive di perangkat mobile -->
+    <title>1303220150</title> <!-- Judul halaman yang tampil di tab browser -->
+</head>
+<body>
+    <h1>Profil Pribadi</h1> <!-- Heading level 1, untuk judul utama halaman -->
+
+    <div style="display: flex; align-items: center;"> <!-- Tag div digunakan sebagai container dengan flexbox untuk mengatur elemen secara horizontal -->
+        <div style="margin-right: 20px;"> <!-- Div ini digunakan untuk menampilkan nama dan gambar profil dengan margin kanan -->
+            <h3>Ichsanul Hakim</h3> <!-- Heading level 3, digunakan untuk menampilkan nama pengguna -->
+            <img src="../webpro-week3/img/profil.jpg" alt="Foto Profil" style="width: 150px; height: auto;"> <!-- Gambar profil dengan ukuran 150px dan penyesuaian tinggi otomatis -->
+        </div>
+        <div> <!-- Div ini digunakan untuk bagian video perkenalan -->
+            <h3>Video Perkenalan</h3> <!-- Heading level 3, untuk judul bagian video -->
+            <video controls style="width: 150px; height: auto;"> <!-- Elemen video dengan kontrol pemutaran, lebar diatur menjadi 150px -->
+                <source src="../webpro-week3/videos/san.mp4" type="video/mp4"> <!-- Sumber video dalam format mp4 -->
+                Browser Anda tidak mendukung tag video. <!-- Pesan fallback jika browser tidak mendukung elemen video -->
+            </video>
+        </div>
+    </div>
+
+    <h2>Tentang Saya</h2> <!-- Heading level 2, untuk judul bagian tentang diri pengguna -->
+    <p>Halo Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif</p> <!-- Paragraf yang menjelaskan tentang diri sendiri -->
+
+    <h2>Keterampilan</h2> <!-- Heading level 2, untuk judul bagian keterampilan -->
+    <table> <!-- Tag table digunakan untuk membuat tabel yang menampilkan keterampilan dan tingkatannya -->
+        <tr>
+            <th>Keterampilan</th> <!-- Heading kolom untuk daftar keterampilan -->
+            <th>Tingkat</th> <!-- Heading kolom untuk tingkat keterampilan -->
+        </tr>
+        <tr>
+            <td>HTML & CSS</td> <!-- Baris tabel untuk keterampilan HTML & CSS -->
+            <td>Mahir</td> <!-- Tingkat keterampilan HTML & CSS -->
+        </tr>
+        <tr>
+            <td>JavaScript</td> <!-- Baris tabel untuk keterampilan JavaScript -->
+            <td>Menengah</td> <!-- Tingkat keterampilan JavaScript -->
+        </tr>
+        <tr>
+            <td>Python</td> <!-- Baris tabel untuk keterampilan Python -->
+            <td>Pemula</td> <!-- Tingkat keterampilan Python -->
+        </tr>
+    </table>
+
+    <div class="form-section"> <!-- Div dengan class 'form-section' digunakan untuk membungkus elemen formulir kontak -->
+        <h2>Hubungi Saya</h2> <!-- Heading level 2, untuk judul bagian formulir kontak -->
+        <form> <!-- Tag form digunakan untuk membuat formulir pengiriman data -->
+            <label for="name">Nama:</label> <!-- Label untuk input nama -->
+            <input type="text" id="name" name="name" required><br><br> <!-- Input teks untuk memasukkan nama -->
+            <label for="email">Email:</label> <!-- Label untuk input email -->
+            <input type="email" id="email" name="email" required><br><br> <!-- Input email untuk memasukkan alamat email -->
+            <label for="message">Pesan:</label><br> <!-- Label untuk area teks pesan -->
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br> <!-- Area teks untuk menulis pesan -->
+            <button type="submit">Kirim</button> <!-- Tombol untuk mengirimkan formulir -->
+        </form>
+    </div>
+
+    <div class="link-section"> <!-- Div dengan class 'link-section' digunakan untuk menampilkan tautan ke media sosial -->
+        <h2>Media Sosial</h2> <!-- Heading level 2, untuk judul bagian tautan media sosial -->
+        <a href="https://www.instagram.com/unvbld" target="_blank">Instagram</a> | <!-- Tautan ke Instagram yang membuka di tab baru -->
+        <a href="https://www.linkedin.com/in/ichsanulhakim/" target="_blank">LinkedIn</a> | <!-- Tautan ke LinkedIn yang membuka di tab baru -->
+        <a href="https://github.com/unvbld" target="_blank">Github</a> <!-- Tautan ke GitHub yang membuka di tab baru -->
+    </div>
+</body>
+</html>
